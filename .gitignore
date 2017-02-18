@@ -1,2 +1,7 @@
 node_modules/
 npm-debug.log
+node_modules/
+.vscode/
+.DS_Store
+.Spotlight-V100
+.Trashes

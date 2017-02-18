@@ -5,6 +5,12 @@ const R = require('ramda');
 const tachyonsModules = require('tachyons-modules');
 
 const moduleBlacklist = [
+  'jekyll-tachyons',
+  'tachyons-and-react',
+  'tachyons-x-ray',
+  'tachyons-debug-grid',
+  'tachyons-debug-children',
+  'tachyons-custom',
   'react-native-style-tachyons',
   'tachyons-base',
   'tachyons-build-css',
@@ -26,9 +32,9 @@ const toJS = R.reduce((acc, [k, v]) => {
 
 
 const queries = {
-  '@media (--breakpoint-not-small)': '@media screen and (min-width: 48em)',
-  '@media (--breakpoint-medium)': '@media screen and (min-width: 48em) and (max-width: 64em)',
-  '@media (--breakpoint-large)': '@media screen and (min-width: 64em)',
+  '@media (--breakpoint-not-small)': '@media screen and (min-width: 30em)',
+  '@media (--breakpoint-medium)': '@media screen and (min-width: 30em) and (max-width: 60em)',
+  '@media (--breakpoint-large)': '@media screen and (min-width: 60em)',
 }
 
 const queryKeys = R.keys(queries);
